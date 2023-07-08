@@ -8,7 +8,7 @@ int main()
 
     while (i <= no)
     {
-        int j = 1,value=i;
+        int j = 1, value = i;
         while (j <= i)
         {
             cout << value;
