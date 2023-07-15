@@ -9,6 +9,7 @@ int dummy(int n){
 }
 
 int main(){
+ 
     int n;
     cin>>n;
 
