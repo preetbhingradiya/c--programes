@@ -18,22 +18,22 @@ int detmin(int arr[], int n)
 
 int detmax(int arr[], int n)
 {
-    int max = INT16_MIN;
+    int maxi = INT16_MIN;
 
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] > max)
-        {
-            max = arr[i];
-        }
+        maxi = max(maxi, arr[i]); //1st way
+        // if (arr[i] > max)
+        // {
+        //     max = arr[i];  //2st way
+        // }
     }
 
-    return max;
+    return maxi;
 }
 
 int main()
 {
-
     int size;
     cin >> size;
 
@@ -46,5 +46,4 @@ int main()
 
     cout << "the max number is :" << detmax(num, size) << endl;
     cout << "the min number is :" << detmin(num, size) << endl;
-
 }
