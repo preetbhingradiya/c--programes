@@ -14,11 +14,13 @@ int main()
         cin>>arr[i];
     }
 
+    //xor all elements in array
     for(int i=0;i<size;i++){
         ans=ans^arr[i];
     }
     
-    for(int i=0;i<size;i++){
+    //xor [1,n-1]
+    for(int i=1;i<size;i++){
         ans=ans^i;
     }
     cout<<ans;
