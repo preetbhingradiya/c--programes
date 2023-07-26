@@ -28,6 +28,22 @@ int squre(int num)
     return mid;
 }
 
+double squredeci(int num, int range, int store)
+{
+    double factor = 1;
+    double ans = store;
+
+    for (int i = 0; i < range; i++)
+    {
+        factor = factor / 10;
+
+        for (double j = ans; j * j < num; j = j + factor){
+            ans=j;
+        }
+    }
+    return ans;
+}
+
 int main()
 {
 
@@ -36,5 +52,5 @@ int main()
     cin >> x;
 
     int store = squre(x);
-    cout << store;
+    cout << "answer is squre " << squredeci(x, 3, store);
 }
