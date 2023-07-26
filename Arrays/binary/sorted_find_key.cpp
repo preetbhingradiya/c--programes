@@ -54,11 +54,11 @@ int main(){
 
     int store=pivot(arr,size);
     if(key>=arr[store] && key<=arr[size-1]){
-        int temp= binarySearch(arr,store,size-1,key);
+        int temp= binarySearch(arr,store,size-1,key);  //[1,2,3]
         cout<<"key index is :"<<temp;
     }
     else{
-        int temp = binarySearch(arr,0,store-1,key);
+        int temp = binarySearch(arr,0,store-1,key);   //[7,9]
         cout<<"key index is :"<<temp;
     }
 }
