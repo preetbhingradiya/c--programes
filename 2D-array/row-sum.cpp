@@ -3,15 +3,22 @@ using namespace std;
 
 int sumOfRow(int arr[][3], int row, int col)
 {
+    int maxi=INT16_MIN;
     for (int row = 0; row < 3; row++)
     {
-            int sum = 0;
+        int sum = 0;
+        int rowIndex=-1;
         for (int col = 0; col < 3; col++)
         {
-            sum += arr[col][row];
+            sum += arr[row][col];
         }
-        cout << sum << " ";
+        // cout << sum << " "; // sum of row
+        if(sum>maxi){
+            maxi=sum;
+            rowIndex=row;
+        }
     }
+    cout<<maxi<<" ";
 }
 
 int main()
