@@ -4,29 +4,25 @@ using namespace std;
 int main()
 {
 
-    int no, bin;
+    int no[100], bin,n;
     cout << "Enter the vamlue of no :";
-    cin >> no;
+    cin >> n;
 
-    while (no > 0)
+    int i = 0;
+    while (n > 0)
     {
-        bin = no % 2;
-        cout << bin;
-        no /= 2;
+        no[i] = n % 2;
+        n=n / 2;
+        i++;
     }
 
-    // methd no 2
-    
-    // int ans = 0;
-    // int i = 0;
-    // while (no != 0)
-    // {
+    for (i = i - 1; i >= 0; i--)
+    {
+        cout << no[i];
+    }
 
-    //     int bit = no & 1;
-    //     ans = bit * pow(10, i) + ans;
-
-    //     no = no >> 1;
-    //     i++;
-    // }
-    // cout<<"Answer is binary number : "<<ans;
+    // 10/2 = 5 =>0
+    // 5/2  = 2 =>1
+    // 2/2  = 1 =>0     //reverse arry then 1010
+    // 1/2  = 0 =>1
 }
