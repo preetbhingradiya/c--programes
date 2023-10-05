@@ -23,7 +23,6 @@ int main(){
         if(prime(i)){
             count++;
         }
-        cout<<prime(i)<<" ";
     }
-    
+    cout<<count<<" ";
 }
