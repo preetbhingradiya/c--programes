@@ -1,0 +1,1 @@
+ptrNum=ptrNum+1;
