@@ -19,7 +19,7 @@ int sensetivCase(char ch){
     }
 }
 
-int palindrome(string num)
+int palindrome(string num)      
 {
 
     int s = 0;
