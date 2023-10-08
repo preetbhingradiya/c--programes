@@ -16,7 +16,7 @@ char maxWords(string num)
 
     int maxi = 0, ans = 0;
     for (int i = 0; i < 26; i++)
-    {
+    { 
         if (maxi < num[i])
         {
             ans = i;
