@@ -19,7 +19,7 @@ int main()
         ans=ans^arr[i];
     }
     
-    //xor [1,n-1]
+    //xor [1,n-1]kkkkkk
     for(int i=1;i<size;i++){
         ans=ans^i;
     }

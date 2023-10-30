@@ -14,7 +14,7 @@ int main()
     {
         temp[(i + k) % size] = arr[i];
         //(0+2)%6=arr[0]  1st round
-        //arr[2]=arr[0]  arr[2]=12
+        //temp[2]=arr[0]  arr[2]=12
     }
 
     for (int i = 0; i < size; i++)
