@@ -1,21 +1,32 @@
 #include <iostream>
 using namespace std;
 
+int reverseInteger(int x)
+{
+  int rev_num = 0;
+  while (x > 0)
+  {
+    rev_num = rev_num * 10 + x % 10;
+    x = x / 10;
+  }
+  return rev_num;
+}
+
 int main()
 {
-    int n, reverse, remainder;
+  int x;
+  cout << "Enter the Number :- ";
+  cin >> x;
 
-    cout << "Enter the Number";
-    cin >> n;
+  int rev_num = 0;
+  while (x > 0)
+  {
+    rev_num = rev_num * 10 + x % 10;
+    x = x / 10;
+  cout <<  x%10 << " ";
+  }
 
-    while (n != 0)
-    {
-        remainder = n % 10;
-        reverse = reverse * 10 + remainder;
-        n /= 10;
-    }
-
-    cout << "Reversed Number = " << reverse;
+  // cout<<"Reverse of no. is -> "<<reverseInteger(x);
 
   return 0;
 }
